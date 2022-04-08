@@ -33,7 +33,19 @@ pipeline {
 
     stage('SonarQube') {
       steps {
-        mail(subject: '[App PEPCEA] Se ha distribuido una nueva versiÃ³n', body: 'Nueva version', from: 'matias.gonzalez@estudiantes.utec.edu.uy', to: 'matias.gonzalez@estudiantes.utec.edu.uy')
+        echo 'Mensaje'
+      }
+    }
+
+    stage('Publicación en Google Play') {
+      steps {
+        echo 'en la tienda'
+      }
+    }
+
+    stage('Feedback') {
+      steps {
+        echo 'Avisar'
       }
     }
 

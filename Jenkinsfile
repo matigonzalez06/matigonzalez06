@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage('InitialConfiguration') {
+    stage('Initial Configuration') {
       steps {
         echo 'Configuracion inicial'
       }
